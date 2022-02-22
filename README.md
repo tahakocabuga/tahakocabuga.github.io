@@ -1,1 +1,0 @@
-# tahakocabuga.github.io
