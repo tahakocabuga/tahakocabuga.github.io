@@ -1,0 +1,718 @@
+@import url("https://rsms.me/inter/inter.css");
+@import url("https://fonts.googleapis.com/css2?family=Raleway&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Mono&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+[hidden] {
+  display: none !important;
+}
+
+::-moz-selection {
+  /* Code for Firefox */
+  color: #ececec;
+  background: #222831;
+}
+
+::selection {
+  color: #ececec;
+  background: #222831;
+}
+
+html {
+  --foreground: white;
+  --background: #160f19;
+  --primary: yellow;
+  --secondary: aquamarine;
+  --spacing-s: 8px;
+  --spacing-m: 24px;
+  --spacing-l: 32px;
+  --spacing-xl: 48px;
+}
+
+body {
+  font-family: "Inter var", "Roboto Mono", monospace;
+  margin: 2em;
+  background: var(--background);
+  color: var(--foreground);
+  line-height: 1.5;
+  overflow-x: hidden;
+}
+
+h1 {
+  font-family: "IBM Plex Mono", "Roboto Mono", monospace;
+  display: inline-block;
+  background: yellow;
+  color: black;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+h2,
+h3,
+h4 {
+  font-family: "IBM Plex Mono", "Roboto Mono", monospace;
+  margin-top: var(--spacing-xl);
+  color: white;
+}
+
+p {
+  margin-top: var(--spacing-l);
+  margin-left: var(--spacing-xl);
+  margin-right: var(--spacing-xl);
+}
+
+ul > li,
+ol > li {
+  margin-bottom: var(--spacing-s);
+  line-height: 1.5;
+}
+
+ul.no-bullet {
+  list-style-type: none;
+}
+
+.glitch-remix img {
+  height: 30px;
+  vertical-align: text-bottom;
+}
+
+pre,
+code {
+  font-size: 15px;
+  padding: 4px;
+  font-family: inherit;
+  background: var(--secondary);
+  color: black;
+  font-family: "Roboto Mono", monospace;
+}
+
+header {
+  top: 0;
+  transition: 1s ease;
+}
+
+.art {
+  width: 100%;
+}
+
+footer {
+  margin: var(--spacing-xl) 0;
+  padding-top: var(--spacing-l);
+  border-top: 10px solid var(--secondary);
+  border-bottom: 10px solid var(--secondary);
+  font-family: "Roboto Mono", monospace;
+  border-radius: 9px;
+  box-shadow: 0 4px 80px #000;
+}
+
+.horizontal {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+.avatar {
+  height: 20px;
+  vertical-align: middle;
+}
+
+.button {
+  font-size: inherit;
+  font-family: inherit;
+  border-radius: 3px;
+  border: none;
+  background: var(--secondary);
+  padding: 8px 16px;
+  box-shadow: 6px 7px var(--primary);
+  cursor: pointer;
+  transition: background 0.2s linear;
+  font-family: "Roboto Mono", monospace;
+}
+
+.button:hover {
+  background: var(--primary);
+}
+
+.button:active {
+  box-shadow: none;
+}
+
+.datecontainer {
+  font-family: "Roboto Mono", monospace;
+}
+
+#top,
+#bottom,
+#left,
+#right {
+  background: black;
+  position: fixed;
+  z-index: 9;
+  background-color: white;
+}
+#left,
+#right {
+  top: 0;
+  bottom: 0;
+  width: 5px;
+}
+#left {
+  left: 0;
+}
+#right {
+  right: 0;
+}
+
+#top,
+#bottom {
+  left: 0;
+  right: 0;
+  height: 5px;
+}
+#top {
+  top: 0;
+}
+#bottom {
+  bottom: 0;
+}
+
+@media /* Fairly small screens including iphones */ only screen and (max-width: 500px),
+  /* iPads */ only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+  #top,
+  #bottom,
+  #left,
+  #right {
+    display: none;
+  }
+}
+
+@media only screen and (min-device-width: 300px) and (max-device-width: 1010px) {
+  #headerimage {
+    width: 290px;
+  }
+}
+
+@media only screen and (min-device-width: 300px) and (max-device-width: 1010px) {
+  p {
+    font-size: 15px;
+  }
+}
+
+@media only screen and (min-device-width: 300px) and (max-device-width: 1010px) {
+  img {
+    width: 200px;
+  }
+}
+
+img {
+  object-fit: contain;
+  display: inline-block;
+}
+
+.column {
+  display: inline-block;
+  margin-left: 40px;
+}
+
+#whoami {
+  font-size: 25px;
+  font-family: "Inter", "Helvetica", sans-serif;
+  margin-left: 15%;
+  margin-right: 15%;
+}
+
+@media only screen and (max-width: 750px) {
+  #whoami {
+    font-size: 20px;
+    margin-left: 3%;
+    margin-right: 3%;
+  }
+}
+
+#dataTable {
+  font-family: "Inter var", sans-serif;
+  width: 100%;
+}
+
+th {
+  padding: 10px;
+  background-color: #D0E4F5;
+}
+
+td {
+  padding: 10px;
+}
+
+tr:nth-child(even) {
+  background: #DBDBDB;
+}
+
+#td {
+  padding: 10px;
+}
+
+#headerimage {
+  border-radius: 9px;
+  box-shadow: 0 4px 80px #000;
+}
+
+.impressive-square {
+  border-radius: 9px;
+  box-shadow: 0 4px 80px #000;
+  width: 100%;
+  padding-top: 20px;
+  padding-left: 20%;
+  padding-bottom: 20px;
+  padding-right: 20%;
+  font-family: "Raleway", sans-serif;
+  transition: 1s ease;
+}
+
+#div {
+  background: rgb(82, 9, 121);
+  background: linear-gradient(
+    90deg,
+    rgba(82, 9, 121, 1) 35%,
+    rgba(82, 9, 121, 1) 100%
+  );
+}
+
+.impressive-square:hover {
+  -webkit-transform: scale(1.01);
+  -ms-transform: scale(1.01);
+  transform: scale(1.01);
+  transition: 1s ease;
+}
+
+.impressive-square h2 {
+  font-family: "Raleway", sans-serif;
+}
+
+.impressive-square p {
+  font-size: 20px;
+  margin-top: 0px;
+  margin-left: 0px;
+  margin-right: 0px;
+}
+
+.impressive-body {
+  height: 100%;
+}
+
+#div2 {
+  background-color: #1eae98;
+}
+
+#div3 {
+  background-color: white;
+  color: black;
+}
+
+.pace {
+  -webkit-pointer-events: none;
+  pointer-events: none;
+
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
+}
+
+.pace-inactive {
+  display: none;
+}
+
+.pace .pace-progress {
+  background: #ffff00;
+  position: fixed;
+  z-index: 2000;
+  top: 0;
+  right: 100%;
+  width: 100%;
+  height: 2px;
+}
+
+.footer-a {
+  color: black;
+}
+
+a:not(.glitch-remix):link,
+a:not(.glitch-remix):visited {
+  text-decoration: none;
+  border-bottom: 6px solid var(--primary);
+  /*   color: var(--foreground); */
+  transition: background 0.2s linear;
+  font-family: "IBM Plex Mono", "Roboto Mono", monospace;
+}
+
+#github {
+  float: left;
+}
+
+.profiles {
+  border-radius: 9px;
+  box-shadow: 0 4px 80px #000;
+  width: 47%;
+  padding-top: 20px;
+  padding-left: 10%;
+  padding-bottom: 20px;
+  padding-right: 10%;
+  font-family: "Raleway", sans-serif;
+  transition: 1s ease;
+  display: inline-block;
+  margin-top: 20px;
+}
+
+.profiles:hover {
+  -webkit-transform: scale(1.01);
+  -ms-transform: scale(1.01);
+  transform: scale(1.01);
+  transition: 1s ease;
+}
+
+.profiles h2 {
+  font-family: "Raleway", sans-serif;
+}
+
+.profiles p {
+  font-size: 20px;
+  margin-top: 0px;
+  margin-left: 0px;
+  margin-right: 0px;
+}
+
+.profiles-body {
+  height: 100%;
+}
+
+.testimonial {
+  border-radius: 9px;
+  box-shadow: 0 4px 80px #000;
+  width: 30%;
+  padding-top: 20px;
+  padding-left: 20px;
+  padding-bottom: 20px;
+  padding-right: 20px;
+  font-family: "Raleway", sans-serif;
+  transition: 1s ease;
+  display: inline-block;
+  margin-top: 20px;
+  background-color: #74EBD5;
+  background-image: linear-gradient(90deg, #74EBD5 0%, #9FACE6 100%);
+  color: black;
+  float: left;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.testimonial:hover {
+  -webkit-transform: scale(1.01);
+  -ms-transform: scale(1.01);
+  transform: scale(1.01);
+  transition: 1s ease;
+}
+
+.testimonial h2 {
+  font-family: "Raleway", sans-serif;
+}
+
+.testimonial p {
+  font-size: 20px;
+  margin-top: 0px;
+  margin-left: 0px;
+  margin-right: 0px;
+}
+
+@media only screen and (max-width: 600px) {
+  .testimonial {
+    width: 100%;
+    display: block;
+    margin-right: 50px;
+    margin-left: auto;
+  }
+}
+
+#testimonials:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.square3 {
+  background-color: #FEE140;
+  background-image: linear-gradient(90deg, #FEE140 0%, #FA709A 100%);
+}
+
+@media only screen and (max-width: 600px) {
+  .profiles {
+    width: 100%;
+    display: block;
+  }
+}
+
+#glitch {
+  float: right;
+}
+
+#profiles:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+a {
+  color: white;
+}
+
+#test2 {
+  float: left;
+}
+
+#test3 {
+  float: left;
+}
+
+.printers {
+  background-color: yellow;
+  color: #bc2e1e;
+  text-shadow: 0 1px 0px #378ab4, 1px 0 0px #5dabcd, 1px 2px 1px #378ab4,
+    2px 1px 1px #5dabcd, 2px 3px 2px #378ab4, 3px 2px 2px #5dabcd,
+    3px 4px 2px #378ab4, 4px 3px 3px #5dabcd, 4px 5px 3px #378ab4,
+    5px 4px 2px #5dabcd, 5px 6px 2px #378ab4, 6px 5px 2px #5dabcd,
+    6px 7px 1px #378ab4, 7px 6px 1px #5dabcd, 7px 8px 0px #378ab4,
+    8px 7px 0px #5dabcd;
+}
+
+.colored,
+.devicon-github-plain,
+.devicon-linux-plain {
+  font-size: 80px;
+  margin-left: 20px;
+  margin-top: 20px;
+  margin-bottom: 50px;
+  line-height: 2 !important;
+  letter-spacing: 40px;
+}
+
+marquee {
+  margin-top: 20px;
+}
+
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 120px;
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+
+  /* Position the tooltip */
+  position: absolute;
+  z-index: 1;
+  bottom: 100%;
+  left: 50%;
+  margin-left: -60px;
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+}
+
+.plain {
+  border-bottom: 0px solid var(--background);
+  border-radius: 9px;
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
+#awesome-title {
+  font-size: calc(100vw / 13.2);
+  font-weight: 740;
+  font-family: "Inter", "Helvetica", sans-serif;
+  background-color: none;
+  text-align: left;
+  padding-left: 20px;
+  padding-right: 20px;
+  border-radius: 3px;
+}
+
+.typewrite {
+  font-size: calc(100vw / 13.2);
+  font-weight: 740;
+  font-family: "Inter", "Helvetica", sans-serif;
+  color: black;
+}
+
+#stuff {
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
+.project {
+  border-radius: 9px;
+  box-shadow: 0 4px 80px #000;
+  width: 30%;
+  height: 400px;
+  padding-top: 20px;
+  padding-left: 20px;
+  padding-bottom: 20px;
+  padding-right: 20px;
+  font-family: "Raleway", sans-serif;
+  transition: 1s ease;
+  display: inline-block;
+  margin-top: 40px;
+  background: rgb(0, 255, 222);
+  color: black;
+  float: left;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.project:hover {
+  -webkit-transform: scale(1.01);
+  -ms-transform: scale(1.01);
+  transform: scale(1.01);
+  transition: 1s ease;
+}
+
+.project h2 {
+  font-family: "Raleway", sans-serif;
+  color: black;
+  margin-top: 0px;
+}
+
+.project p {
+  font-size: 20px;
+  margin-top: 0px;
+  margin-left: 0px;
+  margin-right: 0px;
+}
+
+@media only screen and (max-width: 600px) {
+  .project {
+    width: 100%;
+    display: block;
+    margin-right: 50px;
+    margin-left: auto;
+  }
+  .colored,
+  .devicon-github-plain,
+  .devicon-linux-plain {
+    font-size: 40px;
+    line-height: 2 !important;
+    letter-spacing: 40px;
+  }
+}
+
+@media only screen and (min-width: 830px) and (max-width: 1000px) {
+  .project {
+    width: 49%;
+    display: inline;
+    margin-right: 50px;
+    margin-left: auto;
+  }
+  .colored,
+  .devicon-github-plain,
+  .devicon-linux-plain {
+    font-size: 40px;
+    line-height: 2 !important;
+    letter-spacing: 40px;
+  }
+}
+
+#projects:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.wip {
+  float: right;
+  background-color: yellow;
+  border-radius: 3px;
+  padding-left: 5px;
+  padding-right: 5px;
+  padding-top: 2px;
+  padding-bottom: 2px;
+}
+
+#jsoning {
+  padding-bottom: 50px;
+}
+
+#nav {
+  width: 100%;
+  margin: 0px;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  padding-top: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 10px;
+  position: fixed;
+  background-color: var(--background);
+  z-index: 9;
+}
+
+.nav-a {
+  border-bottom: 1px solid var(--background) !important;
+}
+
+.nav-button {
+  background-color: var(--background);
+  padding-top: 10px;
+  padding-right: 20px;
+  padding-bottom: 10px;
+  padding-left: 20px;
+  color: white;
+  border: 1px solid white;
+  border-radius: 5px;
+  transition: 1s ease;
+  cursor: pointer;
+  font-family: "IBM Plex Mono", monospace;
+  margin-bottom: 10px;
+}
+
+.nav-button:hover {
+  background-color: yellow;
+  color: black;
+  transition: 1s ease;
+  border: none;
+  font-weight: bold;
+  -webkit-transform: scale(1.01);
+  -ms-transform: scale(1.01);
+  transform: scale(1.01);
+}
+
+#twitter {
+  float: right;
+  width: 50px;
+  cursor: pointer;
+}
+
+.project img {
+  position: relative;
+  bottom: 0px;
+}
+
+.fa-bars {
+  float: right;
+  font-size: 60px;
+}
+
+#mobile {
+  float: right;
+  display: none;
+}
+
+@media only screen and (max-width: 600px) {
+  #mobile {
+    display: block !important;
+  }
+  .nav-button, #twitter {
+    display: none;
+  }
+}
